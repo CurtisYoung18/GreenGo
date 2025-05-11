@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T27-8AM Green Go! - About</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <!-- 引入 Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <nav>
+        <div class="logo">
+            <h1 class="title glowing-text">
+                <span>G</span>
+                <span>R</span>
+                <span>E</span>
+                <span>E</span>
+                <span>N</span>
+                <span>G</span>
+                <span>O</span>
+            </h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findpath.html">Find Path</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+            <li id="google-login">
+                <a href="#" id="login-button"><i class="fab fa-google"></i>  Login</a>
+            </li>
+            <li id="user-profile" style="display: none;">
+                <img src="" alt="User Avatar" id="user-avatar">
+                <div id="dropdown-menu">
+                    <a href="profile.html">Profile</a>
+                    <a href="#" id="logout-button">Log Out</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <!-- 路径信息和图片展示 -->
+        <section class="bike-info">
+            <div class="bike-images">
+                <img src="imgs/bne.jpg" alt="Bicentennial Bikeway" class="main-image">
+                <!-- 缩略图 -->
+                <div class="thumbnail">
+                    <img src="imgs/bne.jpg" alt="Thumbnail 1">
+                    <img src="imgs/bne.jpg" alt="Thumbnail 2">
+                    <img src="imgs/bne.jpg" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="bike-details">
+                <h2>Bicentennial Bikeway</h2>
+                <p>Brisbane City, Queensland</p>
+                <!-- 标签 -->
+                <div class="tags">
+                    <span>Riverside</span>
+                    <span>Scenic View</span>
+                    <span>Easy Level</span>
+                    <span>High Review Rates</span>
+                    <span>Popular Bike Lane</span>
+                </div>
+                <!-- 路径详情 -->
+                <div class="details-grid">
+                    <div><strong>Lane Distance:</strong> 7 Miles</div>
+                    <div><strong>Estimated Time:</strong> 2.5 Hours</div>
+                    <div><strong>Lane Materials:</strong> Concrete/Asphalt</div>
+                    <div><strong>Bike Location:</strong> On Ground</div>
+                    <div><strong>Bikeway:</strong> Off Road</div>
+                    <div><strong>Difficulty Level:</strong> Easy</div>
+                </div>
+                <p>This is a very popular area for hiking, road biking, and running, so you'll likely encounter other people while exploring. 
+                    The trail is open year-round andis beautiful to visit anytime. Dogs are welcome, but must be on a leash.</p>
+            </div>
+        </section>
+
+        <!-- 水源地图 -->
+        <section class="water-spots">
+            <h3>Water Spots Along the Bike Lane</h3>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+
+        <!-- 骑行体验评价和分享部分 -->
+        <section class="rate-share">
+            <h3>Rate and Share Your Bike Experience!</h3>
+            <div class="rate-form">
+                <div class="rating-stars">★★★★★</div>
+                <textarea placeholder="How do you think about this bike lane?"></textarea>
+                <button>Submit</button>
+            </div>
+        </section>
+
+        <!-- 用户评论展示部分 -->
+        <section class="user-reviews">
+            <h3>User Reviews</h3>
+            <div class="review">
+                <div class="user-info">
+                    <img src="imgs/user.png" alt="User Avatar">
+                    <p>John Doe</p>
+                </div>
+                <div class="user-comment">
+                    <p>Great for beginners and pros alike! The route is smooth with plenty of shade...</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 引入 Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- 自定义JS文件 -->
+    <script src="js/about.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

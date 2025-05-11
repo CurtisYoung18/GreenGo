@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T27-8AM Green Go! - User Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <nav>
+        <div class="logo">
+            <h1 class="title glowing-text">
+                <span>G</span>
+                <span>R</span>
+                <span>E</span>
+                <span>E</span>
+                <span>N</span>
+                <span>G</span>
+                <span>O</span>
+            </h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findpath.html">Find Path</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="active"><a href="profile.html">Profile</a></li>
+            <li id="user-profile">
+                <img src="https://i.pravatar.cc/150?img=32" alt="User Avatar" id="user-avatar">
+                <div id="dropdown-menu">
+                    <a href="profile.html">Profile</a>
+                    <a href="#" id="logout-button">Log Out</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="profile-container">
+            <div class="profile-header">
+                <img src="https://i.pravatar.cc/150?img=32" alt="User Avatar" id="profile-avatar">
+                <h1 id="user-name">John Green</h1>
+            </div>
+            <div class="profile-info">
+                <h2>User Information</h2>
+                <p><strong>Email:</strong> <span id="user-email">johngreen@example.com</span></p>
+                <p><strong>Member Since:</strong> <span id="member-since">March 15, 2022</span></p>
+            </div>
+            <div class="profile-stats">
+                <h2>Cycling Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>Total Distance</h3>
+                        <p id="total-distance">1,234 km</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Favorite Route</h3>
+                        <p id="favorite-route">West Lake Loop</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Events Attended</h3>
+                        <p id="events-attended">15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-achievements">
+                <h2>Achievements</h2>
+                <ul>
+                    <li>🏆 Eco Pioneer - Cycled over 1000 km</li>
+                    <li>🌟 Event Enthusiast - Participated in more than 10 cycling events</li>
+                    <li>🌳 Green Warrior - Used eco-friendly transportation for 30 consecutive days</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

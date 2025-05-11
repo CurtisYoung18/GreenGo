@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px); 
+    transition: all 0.3s ease;
+    background-color: rgba(224, 224, 224, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2F4F4F;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+nav ul li.active a,
+nav ul li:hover a {
+    background-color: rgba(47, 79, 79, 0.5); 
+    color: white;
+    transform: scale(1.1); 
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .title {
+    font-size: 1.8em;
+    color: #2F4F4F;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.glowing-text span {
+  display: inline-block;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.glowing-text span:hover {
+  color: white;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff9900, 0 0 30px #ff6600, 0 0 40px #ff3300, 0 0 50px #ff0000;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+#google-login,
+#user-profile {
+    display: flex;
+    align-items: center;
+}
+
+#dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    min-width: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+.dropdown-item {
+    display: flex;
+    flex-direction: column;
+}
+
+#dropdown-menu a {
+    display: block;
+    padding: 5px 10px;
+    color: #ffffff; 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold; 
+}
+
+#dropdown-menu a:first-child {
+    margin-bottom: 5px;
+}
+
+#dropdown-menu a:hover {
+    background-color: rgba(47, 79, 79, 0.8); 
+    color: #ffffff; 
+}
+
+#user-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+#user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    transition: border-color 0.3s;
+}
+
+#user-profile:hover #user-avatar {
+    border-color: #2F4F4F;
+}
+
+
+.glowing-text span:nth-child(1):hover {
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00cc00, 0 0 30px #009900;
+}
+.glowing-text span:nth-child(2):hover {
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #cc00cc, 0 0 30px #990099;
+}
+.glowing-text span:nth-child(3):hover {
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00cccc, 0 0 30px #009999;
+}
+.glowing-text span:nth-child(4):hover {
+  text-shadow: 0 0 10px #ffff00, 0 0 20px #cccc00, 0 0 30px #999900;
+}
+.glowing-text span:nth-child(5):hover {
+  text-shadow: 0 0 10px #ff9900, 0 0 20px #cc6600, 0 0 30px #993300;
+}
+.glowing-text span:nth-child(6):hover {
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #cc0000, 0 0 30px #990000;
+}
+.glowing-text span:nth-child(7):hover {
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00cc99, 0 0 30px #009966;
+}
+
+
+#dropdown-menu.show {
+    display: block;
+}

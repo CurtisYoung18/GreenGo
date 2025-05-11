@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T27-8AM Green Go! - Find Path</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/findpath.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="background"></div>
+    <nav>
+        <div class="logo">
+            <h1 class="title glowing-text">
+                <span>G</span>
+                <span>R</span>
+                <span>E</span>
+                <span>E</span>
+                <span>N</span>
+                <span>G</span>
+                <span>O</span>
+            </h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="findpath.html">Find Path</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+
+            <li id="google-login">
+                <a href="#" id="login-button"><i class="fab fa-google"></i>  Login</a>
+            </li>
+            <li id="user-profile" style="display: none;">
+                <img src="" alt="User Avatar" id="user-avatar">
+                <div id="dropdown-menu">
+                    <a href="profile.html">Profile</a>
+                    <a href="#" id="logout-button">Log Out</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="content">        
+        <div id="info-card">
+            <!-- Filter container for bike paths -->
+            <div id="filter-container">
+                <h2>Filter Bike Paths</h2>
+                <div class="filter-box">
+                    <!-- Existing filters -->
+                    <label for="suburb-select">Suburb:</label>
+                    <select id="suburb-select">
+                        <option value="">All Suburbs</option>
+                    </select>
+                    <label for="street-select">Street Name:</label>
+                    <select id="street-select">
+                        <option value="">All Streets</option>
+                    </select>
+                    <label for="traffic-select">Traffic Type:</label>
+                    <select id="traffic-select">
+                        <option value="">All Traffic Types</option>
+                    </select>
+                    <label for="location-select">Location Description:</label>
+                    <select id="location-select">
+                        <option value="">All Locations</option>
+                    </select>
+                    <label for="bikeway-on-off-road-select">Bikeway On/Off Road Description:</label>
+                    <select id="bikeway-on-off-road-select">
+                        <option value="">On/Off Road</option>
+                    </select>
+                </div>
+                <button id="bike-reset-btn">Reset Filters</button>
+            </div>
+            <br>
+            <!-- Bike path information container -->
+            <div id="bike-info">
+                <button id="back-to-filter-btn" onclick="showFilter()" style="margin-top: 0; margin-bottom: 10px;">Back to Filter</button>
+                <h2>Bike Path Information</h2>
+                <img id="bike-info-image" src="imgs/bikeinfo.jpeg" alt="Bike Path Information">
+                <div id="info-content">
+                </div>
+            </div>
+
+            <div id="water-filter-container">
+                <h2>Filter Water Fountains</h2>
+                <div class="filter-box">
+                    <label for="park-select">Park:</label>
+                    <select id="park-select">
+                        <option value="">All Parks</option>
+                    </select>
+                    <label for="item-description-select">Item Description:</label>
+                    <select id="item-description-select">
+                        <option value="">All Item Descriptions</option>
+                    </select>
+                </div>
+                <button id="water-reset-btn">Reset Filters</button>
+            </div>
+            <br>
+            <div id="water-info" style="display: none;">
+                <button id="back-to-water-filter-btn" onclick="showWaterFilter()" style="margin-top: 0; margin-bottom: 10px;">Back to Filter</button>
+                <h2>Water Fountain Information</h2>
+                <img id="water-info-image" src="imgs/drinkinfo.jpg" alt="Water Fountain Information">
+                <div id="water-info-content">
+                </div>
+            </div>
+        </div>
+
+        <div id="map-container">
+            <div id="map"></div>
+            <button id="explore-map-btn" onclick="enableMapInteraction()" style="display: none;">Explore Map</button>
+            <button id="exit-map-btn" onclick="disableMapInteraction()">Exit Zooming</button>
+            <div id="legend">
+                <p><img src="imgs/mapicon.svg" class="legend-icon" alt="Bike Path"> Bike Paths</p>
+                <p><img src="imgs/fountain.png" class="legend-icon" alt="Water Fountains"> Water Fountains</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/findpath.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

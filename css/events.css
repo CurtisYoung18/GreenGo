@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f9fa; 
+    color: #333;
+}
+
+main {
+    margin-top: 100px; 
+    padding: 20px;
+    display: flex;
+    gap: 20px; 
+}
+
+.events-list {
+    width: 40%;
+    max-height: 700px;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.events-list h2 {
+    color: #2F4F4F; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.event-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #2F4F4F; 
+}
+
+.event-item h3 {
+    margin-bottom: 10px;
+    color: #2F4F4F;
+}
+
+.event-item p {
+    margin-bottom: 8px;
+}
+
+.event-item button {
+    padding: 10px 15px;
+    background-color: #2F4F4F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.event-item button:hover {
+    background-color: #3c6e71; 
+}
+
+
+.map-section {
+    width: 60%;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+}
+
+#map {
+    height: 700px;
+    width: 100%;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.event-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none; 
+    width: 250px;
+    z-index: 500; 
+}
+
+.event-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.event-info p {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.event-info button {
+    width: 100%;
+    padding: 8px;
+    background-color: #2F4F4F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.event-info button:hover {
+    background-color: #3c6e71; 
+}

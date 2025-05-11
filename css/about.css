@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    line-height: 1.5;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+header {
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main {
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.bike-info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bike-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bike-images .main-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thumbnail img {
+    width: 30%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.05);
+}
+
+.bike-details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.bike-details h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2F4F4F;
+}
+
+.bike-details p {
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.details-grid div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}

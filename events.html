@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T27-8AM Green Go! - Events</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="background"></div>
+    <nav>
+        <div class="logo">
+            <h1 class="title glowing-text">
+                <span>G</span>
+                <span>R</span>
+                <span>E</span>
+                <span>E</span>
+                <span>N</span>
+                <span>G</span>
+                <span>O</span>
+            </h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findpath.html">Find Path</a></li>
+            <li class="active"><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+            <li id="google-login">
+                <a href="#" id="login-button"><i class="fab fa-google"></i>  Login</a>
+            </li>
+            <li id="user-profile" style="display: none;">
+                <img src="" alt="User Avatar" id="user-avatar">
+                <div id="dropdown-menu">
+                    <a href="profile.html">Profile</a>
+                    <a href="#" id="logout-button">Log</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section class="events-list">
+            <h2>Biking Events In Brisbane</h2>
+            <div id="events-container">
+                <!-- Events will be dynamically populated here -->
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div id="map" style="height: 600px;"></div>
+            <div id="event-info" class="event-info">
+                <!-- Dynamic event information will be populated here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/events.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

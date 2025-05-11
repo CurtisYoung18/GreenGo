@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../imgs/background.avif'); /*ref: https://unsplash.com/photos/a-man-riding-a-bike-next-to-a-dog-on-a-lush-green-hillside-pNsBOpod-tI */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 120px auto 0;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 4px solid #2F4F4F;
+    box-shadow: 0 4px 8px rgba(47, 79, 79, 0.2);
+}
+
+#user-name {
+    font-size: 2.5em;
+    color: #2F4F4F;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info, .profile-stats, .profile-achievements {
+    margin-bottom: 40px;
+}
+
+.profile-info h2, .profile-stats h2, .profile-achievements h2 {
+    color: #2F4F4F;
+    border-bottom: 2px solid #2F4F4F;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.stat-item {
+    background-color: rgba(47, 79, 79, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(47, 79, 79, 0.15);
+}
+
+.stat-item h3 {
+    color: #2F4F4F;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.stat-item p {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-achievements ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.profile-achievements li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(47, 79, 79, 0.05);
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.profile-achievements li:hover {
+    background-color: rgba(47, 79, 79, 0.1);
+}
+
+.profile-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.profile-info strong {
+    color: #2F4F4F;
+}

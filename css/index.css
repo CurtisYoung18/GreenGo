@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../imgs/background.avif'); /*ref: https://unsplash.com/photos/a-man-riding-a-bike-next-to-a-dog-on-a-lush-green-hillside-pNsBOpod-tI */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2); 
+    z-index: -1;
+}
+
+
+
+.showcase {
+    height: calc(100vh - 80px); 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.4); 
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.title {
+    font-size: 6em; 
+    color: #163f13; 
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #2F4F4F;
+    max-width: 600px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.btn.primary {
+    background-color: rgba(47, 79, 79, 0.8);
+    color: white;
+    border: 2px solid #2F4F4F;
+}
+
+.btn.secondary {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #2F4F4F;
+    border: 2px solid #2F4F4F;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
